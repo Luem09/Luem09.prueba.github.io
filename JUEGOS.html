@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda con Mortal Kombat 1 para PS5</title>
+</head>
+<body>
+    <h1>¿Puedes ayudarme a comprar el juego Mortal Kombat 1 para PS5?</h1>
+    <button id="siButton">Sí</button>
+    <div id="videoContainer" style="display: none;">
+        <video id="video" width="320" height="240">
+            <source src="mortal.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+    </div>
+
+    <script>
+        document.getElementById('siButton').addEventListener('click', function() {
+            var video = document.getElementById('video');
+            video.play();
+            document.getElementById('videoContainer').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
